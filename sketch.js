@@ -56,9 +56,9 @@ function draw() {
 }
 
 function updateHeight(x,y){
-  database.red('balloon/height').set({
-    'x':innerHeight.x+x,
-    'y':innerHeight.y+y
+  database.ref('balloon/height').set({
+    'x':balloon.x+x,
+    'y':balloon.y+y
   })
 }
 
